@@ -1,0 +1,165 @@
+@font-face {
+  font-family: Concrete;
+  src: url("Concrete-Regular.dd8a9dd3.otf") format("opentype"), url("Concrete-Regular.060670aa.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url("Gilroy-Regular.0f2c172d.eot") format("opentype"), url("Gilroy-Regular.ebae1f9a.ttf") format("truetype");
+}
+
+* {
+  vertical-align: baseline;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Gilroy;
+}
+
+:focus {
+  outline: none;
+}
+
+table {
+  border-spacing: 0;
+}
+
+@-moz-document url-prefix() {
+  body {
+    letter-spacing: -.09px;
+  }
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+body * {
+  color: #fff;
+  font-size: 24px;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+@font-face {
+  font-family: Concrete;
+  src: url("Concrete-Regular.dd8a9dd3.otf") format("opentype"), url("Concrete-Regular.060670aa.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url("Gilroy-Regular.0f2c172d.eot") format("opentype"), url("Gilroy-Regular.ebae1f9a.ttf") format("truetype");
+}
+
+.light_wrap {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.light {
+  pointer-events: none;
+  aspect-ratio: 1 / 1;
+  filter: blur(250px);
+  border-radius: 50%;
+  position: absolute;
+}
+
+.light-blue {
+  width: 30%;
+  background: #06f;
+  bottom: -25%;
+  left: -15%;
+}
+
+.light-yellow {
+  width: 20%;
+  background: #ffe600;
+  top: -20%;
+  right: -10%;
+}
+
+.light-gray {
+  width: 640px;
+  background-color: #0e1622;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main_block {
+  height: 100vh;
+  width: 100%;
+  z-index: 10;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.main_block_title_wrap {
+  width: 100%;
+  z-index: 1;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.main_block_title_wrap * {
+  cursor: default;
+}
+
+.main_block_title {
+  font-family: Concrete, serif;
+  font-size: 200px;
+  line-height: .9;
+}
+
+.main_block_title-yellow {
+  color: #ffe600;
+}
+
+.main_block_title-blue {
+  color: #06f;
+}
+
+.main_block_text {
+  opacity: 0;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  transform: translateY(20%);
+}
+
+.main_block_text_line {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000px;
+  animation: 5s linear forwards dash;
+}
+
+body {
+  background: #020303;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.wrap {
+  z-index: 101;
+  position: relative;
+}
+
+/*# sourceMappingURL=index.2687eea0.css.map */

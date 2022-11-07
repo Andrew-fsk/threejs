@@ -1,0 +1,164 @@
+@font-face {
+  font-family: Concrete;
+  src: url("/fonts/concrete/Concrete-Regular.otf") format("opentype"), url("/fonts/concrete/Concrete-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: Gilroy;
+  src: url("/fonts/gilroy/Gilroy-Regular.eot") format("opentype"), url("/fonts/gilroy/Gilroy-Regular.ttf") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Gilroy";
+}
+
+*:focus {
+  outline: none;
+}
+
+table {
+  border-spacing: 0;
+}
+
+@-moz-document url-prefix() {
+  body {
+    letter-spacing: -0.09px;
+  }
+}
+body {
+  margin: 0;
+  position: relative;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+body * {
+  font-size: 24px;
+  color: #FFFFFF;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+@font-face {
+  font-family: Concrete;
+  src: url("/fonts/concrete/Concrete-Regular.otf") format("opentype"), url("/fonts/concrete/Concrete-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: Gilroy;
+  src: url("/fonts/gilroy/Gilroy-Regular.eot") format("opentype"), url("/fonts/gilroy/Gilroy-Regular.ttf") format("truetype");
+}
+.light_wrap {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.light {
+  position: absolute;
+  pointer-events: none;
+  aspect-ratio: 1/1;
+  filter: blur(250px);
+  border-radius: 50%;
+}
+
+.light-blue {
+  width: 30%;
+  left: -15%;
+  bottom: -25%;
+  background: #0066FF;
+}
+
+.light-yellow {
+  width: 20%;
+  right: -10%;
+  top: -20%;
+  background: #FFE600;
+}
+
+.light-gray {
+  width: 640px;
+  background-color: #0e1622;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main_block {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+.main_block_title_wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.main_block_title_wrap * {
+  cursor: default;
+}
+
+.main_block_title {
+  font-family: Concrete, serif;
+  font-size: 200px;
+  line-height: 0.9;
+}
+
+.main_block_title-yellow {
+  color: #FFE600;
+}
+
+.main_block_title-blue {
+  color: #0066FF;
+}
+
+.main_block_text {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  opacity: 0;
+  transform: translateY(20%);
+}
+
+.main_block_text_line {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear forwards;
+}
+
+body {
+  background: #020303;
+}
+
+canvas {
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.wrap {
+  position: relative;
+  z-index: 101;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+/*# sourceMappingURL=style.css.map */

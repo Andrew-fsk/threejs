@@ -1,0 +1,48 @@
+@font-face {
+  font-family: Concrete;
+  src: url("/fonts/concrete/Concrete-Regular.otf") format("opentype"), url("/fonts/concrete/Concrete-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: Gilroy;
+  src: url("/fonts/gilroy/Gilroy-Regular.eot") format("opentype"), url("/fonts/gilroy/Gilroy-Regular.ttf") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Gilroy";
+}
+*:focus {
+  outline: none;
+}
+
+table {
+  border-spacing: 0;
+}
+
+@-moz-document url-prefix() {
+  body {
+    letter-spacing: -0.09px;
+  }
+}
+body {
+  margin: 0;
+  position: relative;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+body * {
+  font-size: 24px;
+  color: #FFFFFF;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=reset.css.map */
